@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Website HTML CSS | Codehal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .portfolio-back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 99999;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 30px;
+            color: #222;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+        .portfolio-back-btn svg {
+            transition: transform 0.3s ease;
+        }
+        .portfolio-back-btn:hover {
+            background: rgba(23, 67, 227, 0.1);
+            border-color: #1743e3;
+            box-shadow: 0 4px 25px rgba(23, 67, 227, 0.2);
+            color: #1743e3;
+            transform: translateY(-1px);
+        }
+        .portfolio-back-btn:hover svg {
+            transform: translateX(-3px);
+        }
+        /* Offset the header slightly on larger screens to avoid overlap */
+        @media (min-width: 1025px) {
+            .header {
+                padding-left: 12% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="../../index.html" class="portfolio-back-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Back to Portfolio</span>
+    </a>
+
+    <header class="header">
+        <a href="#" class="Logo">Logo</a>
+    
+    <nav class="navbar">
+        <a href="#" style="--i:1;"  class="active">Home</a>
+        <a href="#" style="--i:2;" >About</a>
+        <a href="#" style="--i:3;" >Review</a>
+        <a href="#" style="--i:4;" >Featured</a>
+        <a href="#" style="--i:5;" >Contact</a>
+    </nav>
+
+    <div class="social-media">
+        <a href="#" style="--i:1;"><i class="bx bxl-twitter"></i></a>
+        <a href="#" style="--i:2;"><i class="bx bxl-instagram"></i></a>
+        <a href="#" style="--i:3;"><i class="bx bxl-facebook"></i></a>
+    </div>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Car Dealing Experience</h1>
+            <h3>Redefined</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur 
+             adipisicing elit. Soluta distinctio deleniti
+             temporibus alias sequi atque neque nemo,
+              nisi voluptatum repellendus corrupti 
+              praesentium? Laborum architecto
+               temporibus porro deserunt modi.</p>
+            <a href="#" class="btn">Explore Cars</a>
+        </div>
+
+        <div class="home-img">
+            <div class="rhombus">
+                <img src="./car.png">
+            </div>
+        </div>
+
+        <div class="rhombus2"></div>
+    </section>
+
+</body>
+
+</html>
