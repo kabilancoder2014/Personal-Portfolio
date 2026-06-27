@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website | Codehal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .portfolio-back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 99999;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 30px;
+            color: #359381;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+        .portfolio-back-btn svg {
+            transition: transform 0.3s ease;
+        }
+        .portfolio-back-btn:hover {
+            background: rgba(53, 147, 129, 0.1);
+            border-color: #359381;
+            box-shadow: 0 4px 25px rgba(53, 147, 129, 0.2);
+            color: #359381;
+            transform: translateY(-1px);
+        }
+        .portfolio-back-btn:hover svg {
+            transform: translateX(-3px);
+        }
+        /* Offset the header slightly on larger screens to avoid overlap */
+        @media (min-width: 1025px) {
+            header {
+                padding-left: 180px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="../../../index.html" class="portfolio-back-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Back to Portfolio</span>
+    </a>
+
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="parallax">
+        <img src="hill1.png" id="hill1">
+        <img src="hill2.png" id="hill2">
+        <img src="hill3.png" id="hill3">
+        <img src="hill4.png" id="hill4">
+        <img src="hill5.png" id="hill5">
+        <img src="tree.png" id="tree">
+        <h2 id="text">Parallax Website</h2>
+        <img src="leaf.png" id="leaf">
+        <img src="plant.png" id="plant">
+    </section>
+
+    <section class="sec">
+        <h2>Parallax Scrolling Website</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut odit consequuntur error quae? Ut ullam velit possimus,
+            amet explicabo ea, magni quam iusto debitis sit fuga consectetur veritatis recusandae mollitia. Ullam, sit quibusdam?
+            Aperiam a facilis autem, dolor qui fugiat obcaecati ducimus hic sit neque! Repudiandae fugiat maxime, obcaecati beatae
+            ex perferendis, repellendus ut molestias officia consectetur atque exercitationem accusantium facere quae, incidunt
+            dolor inventore aliquid! Consequatur esse ut cupiditate ipsam ad adipisci itaque aut corrupti iste veritatis repellat 
+            eius totam, eveniet excepturi aliquam corporis vel nulla saepe perspiciatis natus nisi quis cumque inventore provident.
+            Tempore odit non dicta eveniet suscipit tenetur repellat, asperiores quisquam at illum quod perferendis error, rem, 
+            consequuntur debitis? Nisi iste, distinctio hic laboriosam dolores quas iure aperiam dolor voluptatibus soluta aliquid
+            sint optio, aut provident.<br><br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut odit consequuntur error quae? Ut ullam velit possimus,
+            amet explicabo ea, magni quam iusto debitis sit fuga consectetur veritatis recusandae mollitia. Ullam, sit quibusdam?
+            Aperiam a facilis autem, dolor qui fugiat obcaecati ducimus hic sit neque! Repudiandae fugiat maxime, obcaecati beatae
+            ex perferendis, repellendus ut molestias officia consectetur atque exercitationem accusantium facere quae, incidunt
+            dolor inventore aliquid! Consequatur esse ut cupiditate ipsam ad adipisci itaque aut corrupti iste veritatis repellat 
+            eius totam, eveniet excepturi aliquam corporis vel nulla saepe perspiciatis natus nisi quis cumque inventore provident.
+            Tempore odit non dicta eveniet suscipit tenetur repellat, asperiores quisquam at illum quod perferendis error, rem, 
+            consequuntur debitis? Nisi iste, distinctio hic laboriosam dolores quas iure aperiam dolor voluptatibus soluta aliquid
+            sint optio, aut provident.<br><br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut odit consequuntur error quae? Ut ullam velit possimus,
+            amet explicabo ea, magni quam iusto debitis sit fuga consectetur veritatis recusandae mollitia. Ullam, sit quibusdam?
+            Aperiam a facilis autem, dolor qui fugiat obcaecati ducimus hic sit neque! Repudiandae fugiat maxime, obcaecati beatae
+            ex perferendis, repellendus ut molestias officia consectetur atque exercitationem accusantium facere quae, incidunt
+            dolor inventore aliquid! Consequatur esse ut cupiditate ipsam ad adipisci itaque aut corrupti iste veritatis repellat 
+            eius totam, eveniet excepturi aliquam corporis vel nulla saepe perspiciatis natus nisi quis cumque inventore provident.
+            Tempore odit non dicta eveniet suscipit tenetur repellat, asperiores quisquam at illum quod perferendis error, rem, 
+            consequuntur debitis? Nisi iste, distinctio hic laboriosam dolores quas iure aperiam dolor voluptatibus soluta aliquid
+            sint optio, aut provident.<br><br>
+        </p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

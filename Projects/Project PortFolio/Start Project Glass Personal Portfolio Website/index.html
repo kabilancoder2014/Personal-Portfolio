@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website Using HTML & CSS | Codehal</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+    <style>
+        .portfolio-back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 99999;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 30px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+        .portfolio-back-btn svg {
+            transition: transform 0.3s ease;
+        }
+        .portfolio-back-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+            border-color: #ffffff;
+            box-shadow: 0 4px 25px rgba(255, 255, 255, 0.3);
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+        .portfolio-back-btn:hover svg {
+            transform: translateX(-3px);
+        }
+        /* Offset the header slightly on larger screens to avoid overlap */
+        @media (min-width: 1025px) {
+            header {
+                padding-left: 180px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <a href="../../../index.html" class="portfolio-back-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span>Back to Portfolio</span>
+        </a>
+        <header class="animated">
+            <a href="#" class="logo">Logo</a>
+
+
+            <nav class="navbar">
+                <a href="#" class="active">Home</a></li>
+                <a href="#">About</a></li>
+                <a href="#">Portfolio</a></li>
+                <a href="#">Service</a></li>
+                <a href="#">Contact</a></li>
+            </nav>
+        </header>
+        <section class="home animated">
+            <div class="home-detail">
+                <h1>Kabilan</h1>
+                <h2>Frontend Developer</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                 elit. Similique distinctio, necessitatibus corrupti accusamus
+                  repellendus explicabo quidem nostrum quia sit molestiae incidunt
+                   ab! Illo id harum inventore veniam nihil perspiciatis.</p>
+                   <div class="download-social">
+                    <a href="#" class="btn">Download CV</a>
+                    <div class="social-icons">
+                        <a href="#"><i class="ri-github-fill"></i></a>
+                        <a href="#"><i class="ri-linkedin-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-x-fill"></i></a>
+                        <a href="#"><i class="ri-youtube-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-img">
+                <div class="img-box">
+                    <img src="home.png" alt="">
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- <div class="content">              
+                <h1>About Me</h1> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde doloribus dolorum accusamus nemo, magnam fugit expedita saepe sint, debitis explicabo harum. Doloribus ex rerum voluptatem autem sint, debitis odit minima.</p>             
+            </div> -->
+
+</body>
+
+</html>
